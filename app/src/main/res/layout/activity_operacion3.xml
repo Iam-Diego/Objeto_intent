@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Operacion3Activity">
+
+    <EditText
+        android:id="@+id/etParteRealA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Parte Real A"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etParteImaginariaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Parte Imaginaria A"
+        android:layout_below="@id/etParteRealA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etParteRealB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Parte Real B"
+        android:layout_below="@id/etParteImaginariaA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etParteImaginariaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Parte Imaginaria B"
+        android:layout_below="@id/etParteRealB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"
+        />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar"
+        android:layout_below="@id/etParteImaginariaB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restar"
+        android:layout_below="@id/btnSumar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/btnRestar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResultado"
+        android:layout_marginTop="-5dp"
+        android:onClick="regresarAPrincipal"
+        android:layout_centerHorizontal="true"
+        android:text="Regresar a Principal" />
+
+
+</RelativeLayout>

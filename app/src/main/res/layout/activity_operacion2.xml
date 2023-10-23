@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Operacion2Activity">
+
+    <EditText
+        android:id="@+id/etMatrixA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matrix A (e.g., 1,2,3;4,5,6;7,8,9)"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etMatrixB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matrix B (e.g., 9,8,7;6,5,4;3,2,1)"
+        android:layout_below="@+id/etMatrixA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar Matrices"
+        android:layout_below="@+id/etMatrixB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restar Matrices"
+        android:layout_below="@+id/btnSumar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRestar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResultado"
+        android:layout_centerHorizontal="true"
+        android:text="Regresar a Principal"
+        android:onClick="regresarAPrincipal" />
+
+</RelativeLayout>

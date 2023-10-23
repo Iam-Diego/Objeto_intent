@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Operacion4Activity">
+
+    <EditText
+        android:id="@+id/etTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Temperatura (°C)"
+        android:inputType="numberDecimal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/etPresion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Presión (Pa)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/etTemperatura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnCalcularDensidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Densidad del Aire"
+        android:layout_below="@id/etPresion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/btnCalcularDensidad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="regresarAPrincipal"
+        android:text="Regresar a Principal"
+        android:layout_below="@id/tvResultado" />
+</RelativeLayout>
